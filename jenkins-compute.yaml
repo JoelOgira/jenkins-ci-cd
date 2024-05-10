@@ -55,7 +55,7 @@ Resources:
     Properties:
       GroupDescription: SSH, HTTP, and Additional Ports
       VpcId:
-        Fn::ImportValue: !Sub KubeadmVPC
+        Fn::ImportValue: !Sub JenkinsVPC
       SecurityGroupIngress:
         - CidrIp: 0.0.0.0/0
           FromPort: 22
